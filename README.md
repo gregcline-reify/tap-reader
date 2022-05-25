@@ -5,14 +5,14 @@ to `tap>`.
 
 You will need to do the following somewhere in your running repl to make sure
 the tagged literal implementation is bound.
-```
+```clojure
 (require '[tap-reader])
 ```
 
 Once that's done you can use it as follows to send forms to any `tap>` listener
 you might have.
 
-```
+```clojure
 (let [x 10
       y #tap (* x 2)]
   #tap (+ 11 #tap y))
